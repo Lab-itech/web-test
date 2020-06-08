@@ -1,0 +1,24 @@
+
+footer .contenido {    
+    border-bottom-left-radius: 10px; /*Redondea arriba izquierda*/
+    border-bottom-right-radius: 10px; /* Redondea arriba derecha*/
+    background-color: #C6d5c5;  /*Color de fondo*/
+    display: flex; /*De aqui hacia abajo la conf de las 4 columnas*/
+    flex-flow: row wrap;
+}
+
+.c1, .c2, .c3, .c4 {
+    color: black;
+	width: 25%; /*Con 25% se logran ver 4 columnas*/
+    padding: 25px;/*Separación entre div de clase "c1, c2,...,c5"*/
+    text-align: left;/*Texto a la izquierda como referencia del video*/
+}
+
+
+/*De aqui hacia abajo la conf para una columna*/
+@media (max-width: 900px) {
+    .c1, .c2, .c3, .c4 {
+	width: 100%;/*Con 100% hay solo una columna*/
+    }
+
+}

@@ -1,0 +1,62 @@
+/* 6. responsive */
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.contenido img{
+    display: flex; /*De aqui hacia abajo la conf de las 3 columnas*/
+    flex-flow: row wrap;
+}
+
+.contenido {
+        background-color: #d5c75f;
+    }
+
+.img-c1, .img-c2, .img-c3, .img-c4, .img-c5, .img-c6 {
+    color: black;
+	width: 25%; /*Con 25% se logran ver 4 columnas*/
+    padding: 25px;/*Separación entre div de clase "c1, c2,...,c5"*/
+    text-align: center;/*Texto a la izquierda como referencia del video*/
+    display: inline-block;
+}
+
+/*efecto blur para la imagen 1*/
+.img-blur{
+    filter: blur(10px);
+    -webkit-filter: grayscale(10%);
+    -moz-filter: grayscale(10%);
+    -ms-filter: grayscale(10%);
+    -o-filter: grayscale(10%);
+    }
+ 
+/*Escala de grices para imagenes 2,4 y 6*/
+.img-gris {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    }
+
+/*Sepia para imagen 3*/
+.img-sepia {
+    filter: sepia(90%);
+    -webkit-filter: sepia(90%);
+    -moz-filter: sepia(90%);
+    -ms-filter: sepia(90%);
+    -o-filter: sepia(90%);
+}
+
+@media (max-width: 900px) {
+    .img-c1, .img-c2, .img-c3, .img-c4, .img-c5, .img-c6 {
+        color: black;
+        width: 98%; /*Con 25% se logran ver 3 columnas*/
+        padding: 25px;/*Separación entre div de clase "c1, c2,...,c5"*/
+        text-align: center;/*Texto a la izquierda como referencia del video*/
+        display: inline-block;
+    }
+    
+}

@@ -1,0 +1,75 @@
+@media (min-width: 900px) {
+  green-box{
+    float: center;
+
+  }
+}
+@media (max-width: 900px) {
+  green-box{
+    float: center;
+  }
+}
+
+
+.green-box .sz-ima1{
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 85px;
+  margin-bottom: 45px;
+  box-shadow: 2px 2px 2px #02010a;
+
+}
+
+/**Para las imagenes 2 y 3*/
+.yellow-box .sz-ima2{
+  width: 20%;
+  height: auto;
+  margin: 45px;
+  box-shadow: 2px 2px 2px #02010a;
+  border-radius: 2px;
+}
+
+#sec-ima .yellow-box{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.green-box,
+.yellow-box,
+{
+margin: 0 0 25px;
+overflow: hidden;
+padding: 25px;
+display: inline;
+}
+.green-box {
+height: auto;
+background-color: #82c3a6;
+border: 1px solid #afcde3;
+}
+.yellow-box {
+height: auto;
+background-color: #d5c75f;
+border: 1px solid #afcde3;
+}
+
+
+#imagen1 img{
+transition-property: rotate (10deg);
+transition-duration: 0.5s;
+-webkit-transition: all 0.5s ease-out;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+}
+
+#imagen1 img:hover{
+  -webkit-transform: rotate(10deg);
+   -moz-transform: rotate(10deg);
+   -ms-transform: rotate(10deg);
+   transform: rotate(10deg);
+}
